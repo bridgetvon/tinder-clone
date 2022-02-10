@@ -1,27 +1,39 @@
-import "./App.css";
-import Header from "./Header";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import TinderCards from "./TinderCards";
-import TinderCard from "react-tinder-card";
-import SwipeButtons from "./SwipeButtons";
+import './App.css';
+import Header from './Header';
+import SwipeButtons from './SwipeButtons';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import TinderCards from './TinderCards';
+import Chat from './Chat';
+import Chats from './Chats';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <TinderCards />
-      <SwipeButtons />
-      <Router>
-        <Routes>
-          <Route path="/card" element={<TinderCards />} />
-          {/* <Route>
-            <TinderCard />
+      <header className="App-header">
 
-          </Route> */}
-          {/* <Route path="/chat" element={<Chat />} /> */}
-          {/* <Route path="message" element={<Message />} /> */}
-        </Routes>
-      </Router>
+        <Router>
+          <Header backButton="/" />
+          <Routes>
+            <Route path="/chat" element={<Chats />} />
+            <Route path="/tinder" element={<TinderCards />} />
+            <Route path="/" />
+          </Routes>
+
+          {/* Tinder Cards */}
+          {/*  Buttons below tinder cards */}
+          <TinderCards />
+          <SwipeButtons />
+          {/* Chat screen */}
+          {/* Individual chat screen */}
+
+
+        </Router>
+
+      </header>
     </div>
   );
 }
