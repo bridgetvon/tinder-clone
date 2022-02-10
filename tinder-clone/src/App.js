@@ -13,12 +13,13 @@ import Chats from './Chats';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
 
         <Router>
           <Header backButton="/" />
           <Routes>
             <Route path="/chat" element={<Chats />} />
+            {/* <Route path="/chat/*" element={<Chats />} /> */}
+
             <Route path="/tinder" element={<TinderCards />} />
             <Route path="/" />
           </Routes>
@@ -33,7 +34,6 @@ function App() {
 
         </Router>
 
-      </header>
     </div>
   );
 }
