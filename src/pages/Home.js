@@ -18,7 +18,7 @@ function Home() {
             <Route path="/" element={<TinderCards />} />
           </Routes>  
         </main>
-        <SwipeButtons />
+        <SwipeButtons /> 
     </div>
   )
 }

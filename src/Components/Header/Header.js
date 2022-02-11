@@ -1,7 +1,6 @@
 import React from 'react';
 import PersonIcon from '@mui/icons-material/Person';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import {IconButton} from '@mui/material';
 import "./Header.css";
 import { Link, useNavigate } from "react-router-dom";

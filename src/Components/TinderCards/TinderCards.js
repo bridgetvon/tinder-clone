@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import TinderCard from 'react-tinder-card';
 import database from '../../firebase';
-import './TinderCards.css'
+import './TinderCards.css';
+import SwipeButtons from "../Swipe/SwipeButtons";
 
 
 
@@ -22,7 +23,6 @@ function TinderCards() {
 
     return (
         <div>
-           
             <div className="tinderCards__cardContainer">
                 {people.map(person => (
                     <TinderCard
@@ -39,6 +39,7 @@ function TinderCards() {
                 ))}
             </div>
         </div>
+        
     );
 }
 export default TinderCards;
