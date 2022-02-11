@@ -9,6 +9,7 @@ import {
 import TinderCards from './TinderCards';
 import Chat from './Chat';
 import Chats from './Chats';
+import ChatScreen from './ChatScreen';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Routes>
             <Route path="/chat" element={<Chats />} />
             {/* <Route path="/chat/*" element={<Chats />} /> */}
-
+            <Route path="/chatscreen" element={<ChatScreen />} />
             <Route path="/tinder" element={<TinderCards />} />
             <Route path="/" />
           </Routes>
