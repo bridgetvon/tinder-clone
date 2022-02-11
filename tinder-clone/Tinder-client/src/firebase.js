@@ -12,6 +12,9 @@ const firebaseConfig = {
   measurementId: "G-YP04WSTQK6"
 };
 
+//cloud messaging key 
+// BKNooTgMwJhGaMmosEI-q19YqgLxfzSmFY1JOetQMjWPtj9Pxkm-qfGwzS5e_C0dYjl0ZHhl9CCsvRYkC-Ho8sE
+
   const firebaseApp = firebase.initializeApp(firebaseConfig);
   const database = firebaseApp.firestore();
 
