@@ -20,7 +20,7 @@
   ## User Story :book:
   ```
   AS a developer
-  I WANT to broaden my react skill by building a tinder clone
+  I WANT to broaden my react skills by building a tinder clone
   SO THAT I can learn more and become a more proficient React developer.
 
   ```
