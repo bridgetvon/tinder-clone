@@ -1,15 +1,15 @@
 import './App.css';
-import Header from './Header';
-import SwipeButtons from './SwipeButtons';
+import Header from './Components/Header/Header';
+import SwipeButtons from './Components/Swipe/SwipeButtons';
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
-import TinderCards from './TinderCards';
-import Chat from './Chat';
-import Chats from './Chats';
-import ChatScreen from './ChatScreen';
+import TinderCards from './Components/TinderCards/TinderCards';
+import Chat from './Components/Chat/Chat';
+import Chats from './Components/Chats/Chats';
+import ChatScreen from './Components/ChatScreen/ChatScreen';
 
 function App() {
   return (
